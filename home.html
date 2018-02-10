@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excites and Bites | FIND</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- style sheet to override bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <!-- pasted from jquery ui source -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <!-- Master header -->
+    <div class="container">
+        <header class="masthead">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1><a class="home-return" href="index.html" title="scroll down for your viewing pleasure"><img src="assets/image/logo.png"></a></h1>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+            <!-- Navbar with search form -->
+            <div class="container-fluid">
+                <div id="nav">
+                    <div class="navbar navbar-static">
+                        <div class="container">
+                            <div class="navbar">
+                                <!-- <div class="navbar-collapse collapse"> -->
+                                    <!-- <ul class="nav pull-right navbar-nav"> -->
+                                    <form class="navbar-form form-inline">
+                                            <!-- input boxes -->
+                                            <!-- Event categories -->
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon">Event categories</div>
+                                                <select class="form-control" id="categoriesDropDown">
+                                                    <option value="Comedy">Comedy</option>
+                                                    <option value="Concerts" selected>Concerts</option>
+                                                    <option value="Conferences">Conferences</option>
+                                                    <option value="Festivals">Festivals</option>
+                                                    <option value="Food">Food</option>
+                                                    <option value="Family">Family</option>
+                                                    <option value="Nightlife">Nightlife</option>
+                                                    <option value="Performing Arts">Performing Arts</option>
+                                                    <option value="Sports">Sports</option>
+                                                </select>
+                                            </div>
+                                            <!-- Event location -->
+                                            <input type="text" id="eventLocation" class="form-control search-form-text" placeholder="Event Location">
+                                            <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                                <div class="input-group-addon">Date</div>
+                                                <select class="form-control" id="dateDropDown">
+                                                    <option value="Future" selected>Future</option>
+                                                    <option value="Today">Today</option>
+                                                    <option value="This Week">This Week</option>
+                                                    <option value="Next Week">Next Week</option>
+                                                </select>
+                                            </div>
+                                            <!-- submit button -->
+                                            <button type="submit" id="submitInfo" class="btn btn-default search-form-btn" id="run-search">
+                                                <p>SEARCH</p>
+                                            </button>
+                                        </li>
+                                    </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="assets/image/slide2.jpg" alt="pic1">
+    </div>
+    <div class="item">
+      <img src="assets/image/slide18.jpg" alt="pic2">
+    </div>
+    <div class="item">
+      <img src="assets/image/slide7.jpg" alt="pic3">
+    </div>
+  
+  <div class="item">
+      <img src="assets/image/slide8.jpg" alt="pic4">
+    </div>
+    <div class="item">
+      <img src="assets/image/slide9.jpg" alt="pic5">
+    </div>
+  <div class="item">
+      <img src="assets/image/slide10.jpg" alt="pic6">
+    </div>
+    <div class="item">
+      <img src="assets/image/slide11.jpg" alt="pic7">
+    </div>
+  <div class="item">
+      <img src="assets/image/slide19.jpg" alt="pic8">
+    </div>
+  </div>
+  </div> 
+  </div>
+        <br />
+        <!-- Below photo -->
+        <h1 class="font">FEATURED EVENTS</h1>
+        <h3 class="font">Near 
+            <span id="searchLocation">...</span>
+        </h3>
+        <br />
+        <!-- Results area -->
+        <div class="row" id="searchResultsRow"></div>
+    <br>
+    <br>
+    <!--email-input-->
+    
+        <div class="container">
+            <div class="row">
+                <div class=" col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 ">
+                    <div class="email-form" >
+                        <form action="#">
+                            <div class="input-form">
+                                <h4 class="subscribe-text">SUBSCRIBE FOR FUTURE EVENTS</h4>
+                                <br>
+                                <br>
+                                <div class="input-field">
+                                    <input class="btn btn-md" name="email" id="email" type="email" placeholder="Enter Email Here">
+                                </div>
+                                <br>
+                                <br>
+                                <a href="#" class="btn btn-info btn-lg" id="emailbuttonSubmit">
+                                    <span class="glyphicon glyphicon-envelope"></span> SUBMIT
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </div>
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <footer class="py-5 bg-dark">
+                <div class="footer-container">
+                    <p class="m-0 text-center text-white">Copyright &copy; CodingCrew Excites&Bites App 2017</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/javascript/main.js"></script>
+</body>
+</html>

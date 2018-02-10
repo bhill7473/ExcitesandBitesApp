@@ -1,0 +1,282 @@
+body {
+  /*background: #FFFAF7;*/
+  background-image: url('https://ak5.picdn.net/shutterstock/videos/14795113/thumb/1.jpg?i10c=img.resize(height:160)');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /*background-image: url('https://i.pinimg.com/originals/72/af/75/72af7584e8173a87eb5e457f066c14a8.jpg');
+  */
+}
+/*class that will have tooltip*/
+.title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 96px;
+}
+/* Tooltip container */
+.tooltip {
+  background: purple;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background: purple;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+/* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.home-return{
+	color: purple;
+  font-family: 'Noteworthy';
+  font-size: 48px;
+  font-weight: bold;
+  /*box-shadow: 9px 9px 0 0  #777777;*/
+  /*border-radius: 25px;*/
+  padding:10px;
+}
+a:hover {
+	font-size:120%;
+	color: black;
+}
+.font{
+ 	font-weight: bold;
+ 	color: black;
+ 	font-family: Lucida;
+}
+#find {
+	display: block;
+}
+#photo {
+    background-image: url('http://cache.wizardworld.com/files/hero/_1200x630_fit_center-center_100/WW-cleveland.jpg');
+}
+#details-photo {
+  background-image: url('https://mavenprodcontent.blob.core.windows.net/media/houseofblues_dal/ImageGalleryWidget/Special_Events_Slider/specialevents_slide02_fans.jpg');
+}
+#photo,
+#details-photo {
+  height: 250px;
+  /*border-radius: 25px;*/
+  box-shadow: 9px 9px 0 0  #777777;
+}
+#belowPhoto,
+#belowPhotoDetails {
+  background: #aaaaaa;
+  overflow: hidden;
+  font-family:lucida;
+  box-shadow: 9px 9px 0 0 #777777;
+  color: black;
+}
+#belowPhoto:before,
+#belowPhotoDetails:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.8;
+  /*border-radius: 25px;*/
+  background-color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#belowPhoto:before {
+  height: 550px;
+}
+#belowPhoto,
+#belowPhoto img,
+#belowPhoto h2,
+#belowPhoto h4,
+#belowPhoto p,
+#belowPhoto button,
+#belowPhotoDetails,
+#belowPhotoDetails #titleRow,
+#belowPhotoDetails h3,
+#belowPhotoDetails #startTime,
+#belowPhotoDetails h4,
+#belowPhotoDetails #eventDescriptionRow {
+  color: black;
+  z-index: 3;
+  position: relative;
+}
+#belowPhoto {
+  height: 550px;
+}
+#eventDescriptionRow {
+  color: black;
+  z-index: 3;
+  position: relative;
+}
+.footer-container {
+	background: #854BB6;
+	color: white;
+	border: 2px #854BB6 solid;
+	font-family:lucida;
+}
+.email-form {
+	border-radius: 25px;
+  margin-bottom:20px;
+}
+.input-form {
+	width: 100%;
+	padding: 10px;
+	background-image: url('http://i.dailymail.co.uk/i/pix/2016/04/15/13/2591F30000000578-3541631-image-a-4_1460721669000.jpg');
+	color: white;
+	/*border-radius: 25px;*/
+	font-family:lucida;
+}
+.subscribe-text{
+	font-weight:bold;
+  font-size:28px;
+	font-family:Lucida;
+	color:white;
+	text-align:center;
+}
+.input-field{
+	position:absolute;
+	left:20px;
+	top:75px;
+	margin-right:30px;
+  margin-top:10px;
+}
+.comment-form{
+	position:absolute;
+	top:20px;
+	right:100px;
+	background: wheat;
+	color: #104E8B;
+	/*border-radius: 25px;*/
+	border: 2px solid #c61f41;
+	font-family:lucida;
+  width: 40%;
+	padding: 10px;
+}
+img {
+	/*border-radius: 25px;*/
+	/*border: 2px solid #104E8B;*/
+}
+.page-link{
+	background: blue;
+}
+.choose-button {
+   position: relative;
+   background-color: #c61f41 ;
+   border: 2px solid white;
+   /*border-radius:15px;*/
+   font-size: 14px;
+   font-weight:bold;
+   font-family:lucida;
+   color: #FFFFFF ;
+   padding: 10px;
+   width: 100px;
+   text-align: center;
+   -webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+   text-decoration: none;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 0 7px #ce8686;
+}
+.choose-button:after {
+   content: "";
+   background: white;
+   display: block;
+   position: absolute;
+   padding-top: 300%;
+   padding-left: 350%;
+   margin-left: -20px!important;
+   margin-top: -120%;
+   opacity: 0;
+   transition: all 0.8s
+}
+.choose-button:active:after {
+   padding: 0;
+   margin: 0;
+   opacity: 1;
+   transition: 0s
+}
+.choose-button:hover {
+	background-color: #ed0e0e 
+}
+.carousel-inner{
+  height:300px;
+}
+.item img.resize{
+  height:300px;
+  width:1200;
+}
+.nav{
+  position:absolute;
+  top:0px;
+  right:250px;
+}
+#submitInfo{
+  height:33px;
+  padding:5px;
+}
+#find{
+  color:white;
+}
+#nav{
+  position:absolute;
+  top:280px;
+  color:white;
+  z-index:1;
+}
+
+.food-options{
+  width: 550px;
+  height: 110px;
+  padding: 1%;
+  background-color:white;
+}
+
+#map{
+  height: calc(100%);
+}
+
+.buttons h4{
+  text-align: left;
+  display: flex;
+  font-family: arial;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.col-6map{
+  width: 100%;
+  display:flex;
+}
+
+
+.buttons button{
+  background-color: #d5acef;
+  border:none;
+  font-family: arial;
+  height: 60px;
+  color:black;
+  font-weight: bold;
+  width: 100px;
+  margin-right: 5px;
+}
+.buttons button:hover{
+  background-color: #b682d6;
+  cursor:pointer;
+}

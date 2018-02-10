@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excites and Bites | DETAILS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- style sheet to override bootstrap -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+</head>
+<body>
+    <!-- Master header -->
+    <div class="container">
+        <header class="masthead">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1><a class="home-return" href="index.html" title="scroll down for your viewing pleasure"><img src="assets/image/logo.png"></a></h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <br />
+    <!-- Cleveland Photo -->
+    <div class="container">
+        <div class="slideshow-carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="assets/image/slide1.jpg" alt="pic1">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide13.jpg" alt="pic2">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide14.jpg" alt="pic3">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide12.jpg" alt="pic4">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide15.jpg" alt="pic5">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide16.jpg" alt="pic6">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide3.jpg" alt="pic7">
+                    </div>
+                    <div class="item">
+                        <img src="assets/image/slide6.jpg" alt="pic8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Below photo -->
+        <div id="belowPhotoDetails" class="well">
+            <h1 id="titleRow" class="font"></h1>
+            <h2 id="startTime" class="font"></h2>
+            <!-- Details area -->
+            <div class="row" id="eventDescriptionRow">
+                <div class="col-md-5 col-lg-5">
+                    <h2 class="event-details" id="eventDetails">Event Details</h2>
+                    <h2 class="event-description" id="eventDescription">Event Description</h2>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <h2 class="font">Hungry? Find Food <i class="fa  fa-cutlery fa-2x"></i> </h2>
+                    <div class="food-options">
+
+        <div class="buttons">
+            <h4> Select Type: </h4>
+                <div class="col-6map">
+                <button id="fast">Fast</button>
+                <button id="happy">Happy Hour</button>
+                <button id="asian">Asian</button>
+                <button id="italian">Italian</button>
+                <button id="mex">Mexican</button>
+                <button id="drunk">Drunk</button>
+            </div>
+             </div>
+    </div>
+    <div id="map" style="width: 550px; height: 350px"></div>
+                    <!-- Pagination -->
+                    <div class="container">
+                        <ul class="pagination pagination-lg">
+                            <li class="page-item">
+                                <a class="page-link" href="index.html" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo; Return to Featured Events</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+       </div> 
+    <!-- Footer -->
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <footer class="py-5 bg-dark">
+                <div class="footer-container">
+                    <p class="m-0 text-center text-white">Copyright &copy; CodingCrew Excites&Bites App 2017</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- tooltip -->
+    <script type="text/javascript" src="tooltipster-master/dist/js/tooltipster.bundle.min.js"></script>
+    <script src="assets/javascript/details.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAOCKzruXFCLLp-DaX0-VmCjSXuN8_EkQ&libraries=places&callback=initMap"></script>
+</body>
+</html>
