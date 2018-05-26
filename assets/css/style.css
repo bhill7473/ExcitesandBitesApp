@@ -7,6 +7,11 @@ body {
   */
 }
 /*class that will have tooltip*/
+.imagesSlide{
+  width: 100%;
+  height: 100%;
+
+}
 .title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -218,12 +223,9 @@ img {
 .carousel-inner{
   height:300px;
 }
-.item img.resize{
-  height:300px;
-  width:1200;
-}
+
 .nav{
-  position:absolute;
+ 
   top:0px;
   right:250px;
 }
@@ -235,7 +237,7 @@ img {
   color:white;
 }
 #nav{
-  position:absolute;
+  
   top:280px;
   color:white;
   z-index:1;
