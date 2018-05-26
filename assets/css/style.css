@@ -57,7 +57,7 @@ a:hover {
 	display: block;
 }
 #photo {
-    background-image: url('http://cache.wizardworld.com/files/hero/_1200x630_fit_center-center_100/WW-cleveland.jpg');
+    background-image: url('https://cache.wizardworld.com/files/hero/_1200x630_fit_center-center_100/WW-cleveland.jpg');
 }
 #details-photo {
   background-image: url('https://mavenprodcontent.blob.core.windows.net/media/houseofblues_dal/ImageGalleryWidget/Special_Events_Slider/specialevents_slide02_fans.jpg');
@@ -137,7 +137,7 @@ a:hover {
 .input-form {
 	width: 100%;
 	padding: 10px;
-	background-image: url('http://i.dailymail.co.uk/i/pix/2016/04/15/13/2591F30000000578-3541631-image-a-4_1460721669000.jpg');
+	background-image: url('https://i.dailymail.co.uk/i/pix/2016/04/15/13/2591F30000000578-3541631-image-a-4_1460721669000.jpg');
 	color: white;
 	/*border-radius: 25px;*/
 	font-family:lucida;
