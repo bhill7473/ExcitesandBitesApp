@@ -155,7 +155,7 @@
      var marker = new google.maps.Marker({
          map: map,
          position: place.geometry.location,
-         icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
+         icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png'
      });
      //add info box with details upon click to markers on map
      google.maps.event.addListener(marker, 'click', function() {

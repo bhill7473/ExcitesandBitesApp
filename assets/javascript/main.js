@@ -1,20 +1,20 @@
 $(document).ready(function(){
-            // Initialize Firebase 
-            var config = { 
-                apiKey: "AIzaSyDx7w0AdjWIHAawYuRdcOfOCSi3KM6evXo", 
-                authDomain: "cwrucbproject.firebaseapp.com", 
-                databaseURL: "https://cwrucbproject.firebaseio.com", 
-                projectId: "cwrucbproject", 
-                storageBucket: "", 
-                messagingSenderId: "1056549983679" 
-            }; 
-            firebase.initializeApp(config);   
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDx7w0AdjWIHAawYuRdcOfOCSi3KM6evXo",
+                authDomain: "cwrucbproject.firebaseapp.com",
+                databaseURL: "https://cwrucbproject.firebaseio.com",
+                projectId: "cwrucbproject",
+                storageBucket: "",
+                messagingSenderId: "1056549983679"
+            };
+            firebase.initializeApp(config);
             var database = firebase.database();
             $("#email").change(function(){
                     validate($("#email").val());
                     // console.log($("#email").val());
             })
-             
+
             function validateEmail(email) {
               var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
               return re.test(email);
@@ -31,13 +31,13 @@ $(document).ready(function(){
               }
               return false;
             }
-            $("#validate").bind("click", validate);     
+            $("#validate").bind("click", validate);
             $("#emailbuttonSubmit").on("click", function(event) {
                 event.preventDefault();
-                var emailSubmit = $("#email").val().trim();  
+                var emailSubmit = $("#email").val().trim();
                 // uploads user inputed data to the database
-                database.ref().push({email:emailSubmit}); 
-                console.log(email); 
+                database.ref().push({email:emailSubmit});
+                console.log(email);
                 console.log(emailSubmit);
             });
     //random events loading on the page
@@ -74,7 +74,7 @@ $(document).ready(function(){
             date: date,
             app_key: "3wKwrHtr35ZbcRWR"
         };
-        //ajax call to eventful api   
+        //ajax call to eventful api
         EVDB.API.call("/events/search", searchQueryParams, function(data) {
             console.log(data.events);
             if (data.events === null) {
@@ -139,7 +139,7 @@ $(document).ready(function(){
                 eventDivNarrow.append(button);
                 eventDiv.append(eventDivNarrow);
                 $("#searchResultsRow").append(eventDiv);
-                
+
             })(index);
             $('.title').tooltip();
         }
