@@ -11,7 +11,8 @@
     <!-- style sheet to override bootstrap -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="assets/javascript/main.js"></script>
 </head>
 <body>
     <!-- Master header -->
@@ -77,12 +78,12 @@
         <div class="buttons">
             <h4> Select Type: </h4>
                 <div class="col-6map">
-                <button id="fast">Fast</button>
-                <button id="happy">Happy Hour</button>
-                <button id="asian">Asian</button>
-                <button id="italian">Italian</button>
-                <button id="mex">Mexican</button>
-                <button id="drunk">Drunk</button>
+                <button class="fbtn" id="fast">Fast</button>
+                <button class="fbtn"  id="happy">Happy Hour</button>
+                <button class="fbtn" id="asian">Asian</button>
+                <button class="fbtn" id="italian">Italian</button>
+                <button class="fbtn" id="mex">Mexican</button>
+                <button class="fbtn" id="drunk">Drunk</button>
             </div>
              </div>
     </div>
@@ -103,6 +104,29 @@
         <br />
         <br />
        </div> 
+
+<!--Email Form-->
+<div  class="container row  col-lg-4  justify-content-center eForm">
+          
+        <form>
+        <div class="form-group">
+            <h3 class="text-primary">Subscribe For Future Events</h3>
+            <label for="exampleInputEmail1" class="text-primary font-weight-bold">Name</label>
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Full Name">
+            
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="text-primary font-weight-bold">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            
+        </div>
+        
+        
+            <button id="submitC" type="submit" class="btn btn-primary">Submit</button>
+        </form>   
+        
+      </div>
+
     <!-- Footer -->
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

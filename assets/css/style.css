@@ -1,8 +1,9 @@
 body {
   /*background: #FFFAF7;*/
-  background-image: url('https://ak5.picdn.net/shutterstock/videos/14795113/thumb/1.jpg?i10c=img.resize(height:160)');
+ /* background-image: url('https://ak5.picdn.net/shutterstock/videos/14795113/thumb/1.jpg?i10c=img.resize(height:160)');*/
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-color:#2196F3;
   /*background-image: url('https://i.pinimg.com/originals/72/af/75/72af7584e8173a87eb5e457f066c14a8.jpg');
   */
 }
@@ -12,6 +13,17 @@ body {
   height: 100%;
 
 }
+#navColor{
+  background-color: #104E8B;
+}
+.eForm{
+  background-color:white;
+  margin-left:20px;
+  margin-right:10px;
+  margin-bottom:30px;
+  padding:10px;
+  border-radius: 25px;
+}
 .title {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -19,7 +31,7 @@ body {
 }
 /* Tooltip container */
 .tooltip {
-  background: purple;
+  background: #104E8B;
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black; 
@@ -28,7 +40,7 @@ body {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background: purple;
+  background:#104E8B;
   color: #fff;
   text-align: center;
   padding: 5px 0;
@@ -40,8 +52,50 @@ body {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+#fast{
+  background-color: #2196F3;
+  color:#fff;
+}
+#fast:hover{
+  background-color:#104E8B;
+}
+#happy{
+  background-color: #2196F3;
+  color:#fff;
+}
+#happy:hover{
+  background-color:#104E8B;
+}
+#asian{
+  background-color: #2196F3;
+  color:#fff;
+}
+#asian:hover{
+  background-color:#104E8B;
+}
+#italian{
+  background-color: #2196F3;
+  color:#fff;
+}
+#italian:hover{
+  background-color:#104E8B;
+}
+#mex{
+  background-color: #2196F3;
+  color:#fff;
+}
+#mex:hover{
+  background-color:#104E8B;
+}
+#drunk{
+  background-color: #2196F3;
+  color:#fff;
+}
+#drunk:hover{
+  background-color:#104E8B;
+}
 .home-return{
-	color: purple;
+	color: #104E8B;
   font-family: 'Noteworthy';
   font-size: 48px;
   font-weight: bold;
@@ -55,8 +109,13 @@ a:hover {
 }
 .font{
  	font-weight: bold;
- 	color: black;
+ 	color: #104E8B;
  	font-family: Lucida;
+}
+.font1{
+  font-weight: bold;
+  color: #fff;
+  font-family: Lucida;
 }
 #find {
 	display: block;
@@ -75,10 +134,10 @@ a:hover {
 }
 #belowPhoto,
 #belowPhotoDetails {
-  background: #aaaaaa;
+  background: #104E8B;
   overflow: hidden;
   font-family:lucida;
-  box-shadow: 9px 9px 0 0 #777777;
+  box-shadow: 9px 9px 0 0  #104E8B;
   color: black;
 }
 #belowPhoto:before,
@@ -130,15 +189,16 @@ a:hover {
   position: relative;
 }
 .footer-container {
-	background: #854BB6;
+	background: #104E8B;
 	color: white;
-	border: 2px #854BB6 solid;
+	border: 2px #104E8B solid;
 	font-family:lucida;
 }
 .email-form {
 	border-radius: 25px;
   margin-bottom:20px;
 }
+
 .input-form {
 	width: 100%;
 	padding: 10px;
@@ -178,7 +238,7 @@ img {
 	/*border: 2px solid #104E8B;*/
 }
 .page-link{
-	background: blue;
+	background: #104E8B;
 }
 .choose-button {
    position: relative;
@@ -279,6 +339,6 @@ img {
   margin-right: 5px;
 }
 .buttons button:hover{
-  background-color: #b682d6;
+  background-color: #104E8B;
   cursor:pointer;
 }
